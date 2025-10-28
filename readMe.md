@@ -19,14 +19,30 @@ This project demonstrates basic operations on a database entity using Spring Boo
 
 ## 🛠️ Technologies Used
 
-| Layer                | Technology                                  |
-| -------------------- | ------------------------------------------- |
-| Backend              | Spring Boot 3+, Spring MVC, Spring Data JPA |
-| View (if applicable) | Thymeleaf                                   |
-| Database             | MySQL                                       |
-| Build Tool           | Maven                                       |
-| Language             | Java 17+                                    |
+| Layer                | Technology                                                  |
+| -------------------- | ----------------------------------------------------------- |
+| Backend              | Spring Boot 3+, Spring MVC, Spring Data JPA,Spring Security |
+| View (if applicable) | Thymeleaf                                                   |
+| Database             | MySQL                                                       |
+| Build Tool           | Maven                                                       |
+| Language             | Java 17+                                                    |
 
 ---
 
 ## 📂 Project Structure
+
+crud-springboot/
+├── src/
+│ ├── main/
+│ │ ├── java/com/example/crud/
+│ │ │ ├── controller/ # REST or web controllers
+│ │ │ ├── service/ # Business logic
+│ │ │ ├── repository/ # JPA repositories
+│ │ │ ├── model/ # Entity classes
+│ │ │ └── CrudApplication.java
+│ │ └── resources/
+│ │ ├── templates/ # Thymeleaf HTML files (if used)
+│ │ ├── static/ # CSS, JS, images
+│ │ └── application.properties
+│ └── test/ # Unit and integration tests
+└── pom.xml
