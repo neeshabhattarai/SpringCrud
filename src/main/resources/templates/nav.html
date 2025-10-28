@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+
+    <div class="nav" th:fragment="nav">
+        <div class="crud">
+<h1>C.R.U.D</h1>
+        </div>
+        <div class="child">
+            <a th:href="@{/}" sec:authorize="hasRole('ROLE_ADMIN')">
+                <span><i class="fa-solid fa-list"></i></span>
+                List</a>
+            <a th:href="@{/newuser}"><span>
+<i class="fa-solid fa-user-plus"></i>
+            </span>
+           
+            Add user</a>
+            <a sec:authorize="isAuthenticated()" th:href="@{/test}">
+            <span><i class="fa-solid fa-file"></i></span>
+            Details</a>
+           
+            <a sec:authorize="isAuthenticated()" th:href="@{/logout}">
+                <span><i class="fa-solid fa-right-from-bracket"></i></span>
+                Logout</a>
+               <a th:href="@{/login}" sec:authorize="isAnonymous()">
+                <span><i class="fa-solid fa-inbox"></i></span>
+                Login</a> 
+        </div>
+</div>
+    
+</body>
+</html>

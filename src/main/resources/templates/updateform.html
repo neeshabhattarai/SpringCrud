@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org"  xmlns:sec="http://www.thymeleaf.org/extras/spring-security"  
+>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="/asset/nav.module.css"/>
+
+</head>
+<body>
+    <nav >
+        <div th:replace="~{nav :: nav}"></div>
+    </nav>
+    <main>
+
+        <div th:each="er : ${#fields.errors('user.*')}" th:text="${er}"></div>
+    
+        <form th:action="@{/updateUser}" method="post" th:object="${user}">
+            <h2>Update Form</h2>
+    
+            <div class="divmatch">
+                <label class="onediv" for="email">Email:</label>
+                <input type="email" th:field="*{userName}" >
+            </div>
+    
+            <div class="divmatch">
+                <label class="onediv" for="password">Password:</label>
+                <input type="password" th:field="*{password}" placeholder="Enter your password" required>
+            </div>
+    
+             <div class="divmatch">
+                <label class="onediv" for="password">Role:</label>
+                <input type="text" th:field="*{role}" placeholder="Enter your role" >
+            </div>
+            <button type="submit">Update</button>
+        </form>
+    </main>
+    
+
+</body>
+</html>

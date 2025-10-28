@@ -1,0 +1,113 @@
+
+ .nav{
+ background-color: #00e06c2b;
+ height: 100vh;
+    width: 13rem;
+    margin: auto 0;
+   width: 100%;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: black;
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: left;
+    
+
+}
+.child{
+    margin: auto;
+    height: 90%;
+    width: 85%;
+    display: flex
+;
+    flex-direction: column;
+    gap: 2.5rem;
+    background-color: inherit;
+    align-items: baseline;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    
+}
+.crud{
+    padding-top: 3rem;
+    height: 20%;
+    font-size: 1.4rem;
+    font-weight: 100;
+    /* padding: 1px 3px; */
+    color:rgba(10, 10, 56, 0.945);
+}
+body{
+    margin:0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    background-color: rgba(153, 185, 185, 0.336);
+    gap:3rem;
+}
+.nav a{
+text-decoration: none;
+}
+nav{
+    width: 13%;
+}
+main{
+    width: 90%;
+}
+table{
+    border:rgb(34, 188, 109) solid 2px ;
+margin-top: 5rem;
+width: 56rem;
+}
+form{
+    background-color: #e0dfdf;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 7rem auto;
+    width: 21%;
+ padding:0 2rem 2rem 2rem;
+ height: fit-content;
+    align-items: baseline;
+    /* text-align: center; */
+}
+label{
+    font-weight: bold;
+}
+.onediv{
+    width: 7rem;
+}
+.divmatch{
+    display: flex;
+}
+h2{
+    width: 92%;
+    text-align: center;
+}
+button{
+  color: rgb(244, 241, 241);
+    background-color: #0000ff87;
+    padding: 3px 4px;
+    width: 8rem;
+    height: 2rem;
+    /* margin: 0 auto; */
+    margin-left: 5rem;
+    align-self: normal;
+
+    border-radius: 3px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+input{
+    padding:3px 2px;
+}
+
+td,th{
+    border-right:rgb(34, 34, 188) solid 3px ;
+    padding:8px;
+    text-align: center;
+    
+}
+td:last-child,th:last-child{
+    border-right:none;
+}
